@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Anniversary</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-GLhlTQ8iRABdZLl6O6oVMWSktQOp6b7In1Zl3/JiPExfm1Qw6uFt8+OZddCkP1x" crossorigin="anonymous">
+
+    <style>
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .trainer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .trainer {
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            background-color: rgb(225, 149, 149);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: 0.3s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .trainer:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .trainer img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+        .trainer h3 {
+            margin: 15px 0;
+        }
+
+        .trainer .hidden-message {
+    display: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+        .trainer .social-icons {
+            margin-top: 10px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-around;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .trainer:hover .social-icons {
+            opacity: 1;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: auto;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>OUR JOURNEY TOGETHER MAHAL</h1>
+    </header>
+
+    <section class="trainer-container">
+        <div class="trainer">
+            <img src="NOV.jpg" class="card-img-top" alt="NOV.jpg">
+            <div class="card-body">
+                <h3 class="card-title">NOVEMBER</h3>
+                <p class="hidden-message">I love this picture hindi man yan ung first picture natin wala Ganda mo kasi .I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="DEC.jpeg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">DECEMBER</h3>
+                <p class="hidden-message">DECEMBER Picture biglaang punta ng manila haha akala ko talaga hindi mo ako papansinin eh.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="JAN.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">JANUARY</h3>
+                <p class="hidden-message">gagawa ng video para ipakilala tas ayon nag picture Ganda ng kasama ko no haha wag ka maiingit sis I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="FEB.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">FEBRUARY</h3>
+                <p class="hidden-message">Cute mo dito love.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="MAR.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">MARCH</h3>
+                <p class="hidden-message">kakatapos umakyat ng baguio umakyat naman ng sky plaza.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="APR.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">APRIL</h3>
+                <p class="hidden-message">Akyat naman ng malico haha puro nalang akyat.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="MAY.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">MAY</h3>
+                <p class="hidden-message">same day lang ung picture wag mo na pansinin may mga months lang talaga na wala tayong pic.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="trainer">
+            <img src="JUNE.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">JUNE</h3>
+                <p class="hidden-message">gaya yan tamang Screenschot lang call natin I hope maulit ulit ganyang call lagi ng napuputol eh.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="JULY.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">JULY</h3>
+                <p class="hidden-message">Baguio again for the second timeI LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="AUG.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">AUGUST</h3>
+                <p class="hidden-message">balik ulit sa call haha kahit tulugan mo ako basta nasa call tayo.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="SEPT.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">SEPTEMBER</h3>
+                <p class="hidden-message">Oct talaga yan haha pero nilagay ko lang sa sept sorry na.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="OCT.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">OCTOBER</h3>
+                <p class="hidden-message">our Ilocos Super Ganda mo love. I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="NOVE.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">FIRST YEAR</h3>
+                <p class="hidden-message">happy first anniversary Mahal ko.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="ADD2.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">FIRST YEAR</h3>
+                <p class="hidden-message">I hope na hindi lang dito more years to come pa po.I LOVE YOU MAHAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <img src="ADD3.jpg" class="card-img-top" alt="First Month">
+            <div class="card-body">
+                <h3 class="card-title">FIRST YEAR</h3>
+                <p class="hidden-message">no matter what happen I always LOVE YOU MAHAL ko I hope naging masaya ka kahit hindi tayo magksama sa first natin.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Your trainer cards go here -->
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-Jzj5wnf+3l8HeZyYSn4MjJgR+UQ5TWx/2Ij5xXnFowUt8h6Oqznj8zQF+6ZBZtrA"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-foxbz9PLl3s1b3/lv+pVLu6Z6PdSz2TI9f3/cvJg7Lb5pAVvfOoBqylqQb8i6Gf1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4FjWl">
+    </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const trainers = document.querySelectorAll('.trainer');
+
+        trainers.forEach(trainer => {
+            trainer.addEventListener('mouseenter', function () {
+                const hiddenMessage = trainer.querySelector('.hidden-message');
+                hiddenMessage.style.display = 'block';
+            });
+
+            trainer.addEventListener('mouseleave', function () {
+                const hiddenMessage = trainer.querySelector('.hidden-message');
+                hiddenMessage.style.display = 'none';
+            });
+        });
+    });
+    </script>
+
+
+</body>
+
+</html>
